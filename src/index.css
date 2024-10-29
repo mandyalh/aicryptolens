@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-white;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px currentColor;
+  }
+  
+  .neon-border {
+    box-shadow: 0 0 10px theme('colors.cyan.400'),
+                0 0 20px theme('colors.cyan.400'),
+                0 0 30px theme('colors.cyan.400');
+  }
+  
+  .cyberpunk-gradient {
+    background: linear-gradient(135deg, #ff00ff 0%, #00ffff 100%);
+  }
+}
+
+.upload-area {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px dashed theme('colors.cyan.400');
+}
+
+.cyberpunk-card {
+  background: rgba(13, 13, 13, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid theme('colors.cyan.400');
+}
